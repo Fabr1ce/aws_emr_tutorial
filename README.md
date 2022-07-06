@@ -37,6 +37,7 @@ This repo contains the steps and files I used to build two EMR clusters with Spa
 Navigate to the s3 bucket output folder provided when adding the steps to see the results of the job in a file with prefix part-.
 
 7 - SSH into cluster:
+  
   a- Add SSH inbound rule with your local IP to the cluster SG as outlined [here](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=To%20allow%20SSH%20access%20for%20trusted%20sources%20for%20the%20ElasticMapReduce%2Dmaster%20security%20group).
 
   b- SSH into cluster manager node:
