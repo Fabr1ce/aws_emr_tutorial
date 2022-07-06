@@ -1,4 +1,4 @@
-This repo contains the steps and files I used to build two EMR clusters with Spark (used for just EMR) and Hive (used for EMR Serveless) apps. See step 9 for issues I encountered to look out for if doing this tutorial.
+This repo contains the steps and files I used to build two EMR clusters with Spark (used for just EMR) and Hive (used for EMR Serverless) apps. See step 9 for issues I encountered to look out for if doing this tutorial.
 
 1 - Upload files health_violations.py and food_establishment_data.csv to s3. An s3 bucket that statisfies [these requirements](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=Buckets%20and%20folders%20that%20you%20use%20with%20Amazon%20EMR%20have%20the%20following%20limitations%3A.) is needed. 
 
