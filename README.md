@@ -44,7 +44,7 @@ Navigate to the s3 bucket output folder provided when adding the steps to see th
 
 		aws emr ssh --cluster-id <j-2AL4XXXXXX5T9> --key-pair-file <~/.aws/						
 
-	Look at the logs:
+Look at the logs:
 
 		cd /mnt/var/log/spark && ls
 
@@ -53,6 +53,7 @@ Navigate to the s3 bucket output folder provided when adding the steps to see th
   a- Terminate the cluster:
 
       aws emr terminate-clusters --cluster-ids <myClusterId>
+
 
       aws emr describe-cluster --cluster-id <myClusterId>		
 
