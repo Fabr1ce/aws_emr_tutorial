@@ -57,6 +57,8 @@ Look at the logs:
 
       aws emr describe-cluster --cluster-id <myClusterId>		
 
+  b - Delete s3 resources following [these steps](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=user%20request%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D-,Delete%20S3%20resources,-To%20avoid%20additional).
+  
 9 - Some issues encountered:
  - I was unable to use the CLI to add files to s3 because the bucket I used had all public access blocked so I usde the console.
 
