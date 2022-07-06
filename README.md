@@ -60,12 +60,12 @@ Look at the logs:
   b - Delete s3 resources following [these steps](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=user%20request%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D-,Delete%20S3%20resources,-To%20avoid%20additional).
   
 9 - Some issues encountered:
- - I was unable to use the CLI to add files to s3 because the bucket I used had all public access blocked so I usde the console.
+ - I was unable to use the CLI to add files to s3 because the bucket I used had all public access blocked so I used the console.
 
  - Cluster failed (TERMINATED) right after I built it a few times due to the following:
 	a- I didn't have any VPCs in the region I was trying to use.
 	b- I didn't setup a key pair before building the cluster.
 
- - The cmd to submit work to the cluster (step 5) did not work at first so I used the console following [these steps](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=To%20submit%20a%20Spark%20application%20as%20a%20step%20using%20the%20console ) and figured out that I was using an s3 arn instead of an s3 URI in the CLI cmd.	
+ - The cmd to submit work to the cluster (step 5) did not work at first so I used the console following [these steps](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html#:~:text=To%20submit%20a%20Spark%20application%20as%20a%20step%20using%20the%20console ) and figured out that I was using the s3 arn instead of its URI in the CLI cmd.	
 
 10 - Using EMR serverless (I ran out of time and did not add the steps but this is the tutorial I used https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/getting-started.html). The trust policy and hive file in this repo are used in this part of the tutorial.
